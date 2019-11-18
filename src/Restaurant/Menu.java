@@ -49,11 +49,11 @@ public class Menu {
         return lastUpdated;
     }
 
-    public void printMenu(ArrayList<String> MenuItems) {
-        for (String item: MenuItems) {
-            System.out.println(item);
-        }
-    }
+//    public void printMenu(ArrayList<String> MenuItems) {
+//        for (String item: MenuItems) {
+//            System.out.println(item);
+//        }
+//    }
 
 
     @Override
@@ -62,6 +62,6 @@ public class Menu {
         for (MenuItem item: items) {
             itemList += item + "\n\n";
         };
-        return  this.name + "\n\n" + itemList;
+        return  this.name + "\n\n" + itemList + "\nLast updated: " + this.lastUpdated;
     }
 }

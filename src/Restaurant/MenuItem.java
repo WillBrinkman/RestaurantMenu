@@ -53,19 +53,19 @@ public class MenuItem {
         this.description = description;
         this.category = category;
         this.timeCreated = Calendar.getInstance();
-        this.isNew = getIsNew();
-       // this.isNew = true;
+        //this.isNew = getIsNew();
+        this.isNew = true;
     }
 
-    public boolean getIsNew(){
-
-         Calendar comparisonDate = Calendar.getInstance();
-        if (this.timeCreated.after(comparisonDate) ) {
-            return true;
-
-        }
-        return false;
-    }
+//    public boolean getIsNew(){
+//
+//         Calendar comparisonDate = Calendar.getInstance();
+//        if (this.timeCreated.after(comparisonDate) ) {
+//            return true;
+//
+//        }
+//        return false;
+//    }
 
 
     public boolean isNew() {

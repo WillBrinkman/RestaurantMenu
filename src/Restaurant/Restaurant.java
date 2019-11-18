@@ -23,6 +23,9 @@ public class Restaurant {
             System.out.println("Print individual item\n" + pizza + "\n");
             pizzaPlace.removeItem(burger);
             System.out.println(pizzaPlace);
+            System.out.println(pizza.isNew());
+            pizza.setNew(false);
+            System.out.println(pizza.isNew());
 
         }
     }
